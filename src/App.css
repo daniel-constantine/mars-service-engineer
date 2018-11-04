@@ -30,3 +30,79 @@
     transform: rotate(360deg);
   }
 }
+/*  */
+.legend-node {
+  background: blue;
+  height: 10px;
+  width: 10px;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.legend-bot {
+  background: red;
+  height: 10px;
+  width: 10px;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.legend-bot-node {
+  background: purple;
+  height: 10px;
+  width: 10px;
+  display: inline-block;
+}
+/*  */
+
+.box {
+  background: white;
+  height: 50px;
+  border: 1px solid black;
+  width: 50px;
+  float: left;
+  margin: 0;
+}
+
+.box-bot {
+  background: red;
+  height: 50px;
+  border: 1px solid black;
+  width: 50px;
+  float: left;
+  margin: 0;
+  color: white;
+  font-size: 0.9em;
+  word-wrap: break-word;
+}
+
+.box-nodes {
+  background: blue;
+  height: 50px;
+  border: 1px solid black;
+  width: 50px;
+  float: left;
+  margin: 0;
+}
+
+.box-bot-node {
+  background: purple;
+  height: 50px;
+  border: 1px solid black;
+  width: 50px;
+  float: left;
+  margin: 0;
+  color: white;
+  font-size: 0.9em;
+  word-wrap: break-word;
+}
+
+.board {
+  margin: 0 auto;
+  width: 1040px;
+}
+
+.footer {
+  padding: 10px 0;
+  color: gray;
+}
