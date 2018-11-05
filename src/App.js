@@ -15,8 +15,7 @@ class App extends Component {
     };
   }
 
-  componentDidMount() {
-    //getting the bots
+  getBots() {
     axios
       .get("https://headlight-tournament-1.herokuapp.com/bots")
       .then(res => {
@@ -72,6 +71,14 @@ class App extends Component {
       .catch(error => {
         console.log(error);
       });
+  }
+
+  componentDidMount() {
+    this.interval = setInterval(() => this.getBots(), 1000); //execute the function every 1s
+  }
+
+  componentWillUnmount() {
+    clearInterval(this.interval);
   }
 
   generate() {
